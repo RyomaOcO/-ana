@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>アナハイム・エレクトロニクス | Anaheim Electronics</title>
+  <meta name="description" content="スプーンから宇宙戦艦まで。月面フォン・ブラウン市に本社を置く地球圏最大の総合複合企業、アナハイム・エレクトロニクス（ファンメイド）。">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <canvas id="stars" aria-hidden="true"></canvas>
+
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a href="#top" class="logo" aria-label="アナハイム・エレクトロニクス トップへ">
+        <svg class="logo-mark" viewBox="0 0 48 48" aria-hidden="true">
+          <circle cx="24" cy="24" r="22" fill="none" stroke="currentColor" stroke-width="2"/>
+          <path d="M24 8 L38 38 H31 L24 22 L17 38 H10 Z" fill="currentColor"/>
+          <path d="M6 28 Q24 20 42 28" fill="none" stroke="currentColor" stroke-width="2"/>
+        </svg>
+        <span class="logo-text">
+          <span class="logo-en">ANAHEIM ELECTRONICS</span>
+          <span class="logo-ja">アナハイム・エレクトロニクス</span>
+        </span>
+      </a>
+      <button class="nav-toggle" aria-label="メニューを開く" aria-expanded="false" aria-controls="global-nav">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="global-nav" id="global-nav">
+        <ul>
+          <li><a href="#about">企業情報</a></li>
+          <li><a href="#business">事業紹介</a></li>
+          <li><a href="#products">製品</a></li>
+          <li><a href="#history">沿革</a></li>
+          <li><a href="#news">ニュース</a></li>
+          <li><a href="#recruit">採用情報</a></li>
+          <li><a href="#contact" class="nav-cta">お問い合わせ</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="moon" aria-hidden="true"></div>
+      <div class="container hero-content">
+        <p class="hero-kicker">VON BRAUN CITY, LUNA ／ U.C. 0096</p>
+        <h1 class="hero-title">
+          <span>スプーンから</span>
+          <span>宇宙戦艦まで。</span>
+        </h1>
+        <p class="hero-lead">
+          人類が宇宙に住まう時代。<br>
+          アナハイム・エレクトロニクスは、暮らしの道具から最先端のモビルスーツまで、<br class="pc-only">
+          地球圏のあらゆる「明日」を支えています。
+        </p>
+        <div class="hero-actions">
+          <a href="#business" class="btn btn-primary">事業を見る</a>
+          <a href="#products" class="btn btn-ghost">製品ラインナップ</a>
+        </div>
+      </div>
+      <div class="hero-stats container">
+        <div class="stat"><span class="stat-num" data-count="7">0</span><span class="stat-label">事業を展開する<br>サイド数</span></div>
+        <div class="stat"><span class="stat-num" data-count="120" data-suffix="+">0</span><span class="stat-label">地球圏各地の<br>拠点数</span></div>
+        <div class="stat"><span class="stat-num" data-count="20" data-suffix="+">0</span><span class="stat-label">開発に携わった<br>主要MS機種</span></div>
+        <div class="stat"><span class="stat-num" data-count="4">0</span><span class="stat-label">事業本部<br>（民生・宇宙・MS・艦艇）</span></div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section" id="about">
+      <div class="container">
+        <header class="section-head">
+          <p class="section-en">ABOUT US</p>
+          <h2 class="section-title">企業情報</h2>
+        </header>
+        <div class="about-grid">
+          <div class="about-message">
+            <h3>会長メッセージ</h3>
+            <p>
+              宇宙世紀の幕開けとともに、私たちは人々の暮らしに寄り添う家電メーカーとして歩みを始めました。
+              以来、月面という過酷な環境で培った技術力を武器に、宇宙船、コロニー設備、そしてモビルスーツへと事業を広げてまいりました。
+            </p>
+            <p>
+              技術は、使う者によってその意味を変えます。だからこそ私たちは、地球圏の安定と人類の繁栄に資する製品をお届けすることを使命とし、
+              これからも「スプーンから宇宙戦艦まで」、皆さまの未来を形づくってまいります。
+            </p>
+            <p class="signature">会長　メラニー・ヒュー・カーバイン</p>
+          </div>
+          <dl class="profile">
+            <div><dt>社名</dt><dd>アナハイム・エレクトロニクス社<br><span class="sub">Anaheim Electronics, Inc.</span></dd></div>
+            <div><dt>本社</dt><dd>月面 フォン・ブラウン市</dd></div>
+            <div><dt>主要拠点</dt><dd>グラナダ工場、地球各地の研究所、各サイドの支社・工廠</dd></div>
+            <div><dt>事業内容</dt><dd>民生用電子機器、宇宙船・艦艇、コロニー関連設備、モビルスーツの研究開発・製造・販売</dd></div>
+            <div><dt>主要取引先</dt><dd>地球連邦政府、地球連邦軍 ほか</dd></div>
+            <div><dt>沿革</dt><dd>一年戦争後、旧ジオニック社など旧ジオン公国系企業を吸収し、MS開発体制を確立</dd></div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <!-- BUSINESS -->
+    <section class="section section-alt" id="business">
+      <div class="container">
+        <header class="section-head">
+          <p class="section-en">BUSINESS</p>
+          <h2 class="section-title">事業紹介</h2>
+          <p class="section-desc">生活の隅々から宇宙の果てまで。4つの事業本部が地球圏の産業を支えています。</p>
+        </header>
+        <div class="card-grid">
+          <article class="card">
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48"><ellipse cx="24" cy="14" rx="8" ry="10" fill="none" stroke="currentColor" stroke-width="2.5"/><path d="M24 24 V44" stroke="currentColor" stroke-width="3" stroke-linecap="round"/></svg>
+            </div>
+            <h3>民生機器事業</h3>
+            <p>家電・生活用品から通信機器まで。コロニー生活に欠かせない製品を、高い信頼性でお届けします。創業以来の原点です。</p>
+          </article>
+          <article class="card">
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48"><circle cx="24" cy="24" r="16" fill="none" stroke="currentColor" stroke-width="2.5"/><ellipse cx="24" cy="24" rx="16" ry="5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="24" cy="24" r="3" fill="currentColor"/></svg>
+            </div>
+            <h3>宇宙インフラ事業</h3>
+            <p>スペースコロニーの環境維持システム、月面都市のインフラ、ミノフスキー物理学を応用した熱核融合炉などを手がけます。</p>
+          </article>
+          <article class="card">
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48"><path d="M24 4 L30 14 H18 Z" fill="currentColor"/><rect x="16" y="14" width="16" height="14" rx="2" fill="none" stroke="currentColor" stroke-width="2.5"/><path d="M16 28 L12 44 M32 28 L36 44 M16 18 L6 26 M32 18 L42 26" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/></svg>
+            </div>
+            <h3>モビルスーツ事業</h3>
+            <p>汎用量産機から次世代試作機まで。ガンダム開発計画、Zプロジェクトなど、数々の歴史的機体の開発実績を誇ります。</p>
+          </article>
+          <article class="card">
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48"><path d="M4 28 L14 18 H38 L44 24 L38 30 H14 Z" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/><path d="M18 18 V12 H28 V18" fill="none" stroke="currentColor" stroke-width="2.5"/><circle cx="36" cy="24" r="2" fill="currentColor"/></svg>
+            </div>
+            <h3>艦艇事業</h3>
+            <p>強襲巡洋艦から輸送船まで。月面ドックで培われた設計・建造技術で、宇宙を往くあらゆる艦船を送り出します。</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRODUCTS -->
+    <section class="section" id="products">
+      <div class="container">
+        <header class="section-head">
+          <p class="section-en">PRODUCTS</p>
+          <h2 class="section-title">主要製品・開発実績</h2>
+          <p class="section-desc">当社が開発・製造に携わった代表的なモビルスーツをご紹介します。</p>
+        </header>
+        <div class="filter" role="tablist" aria-label="製品の絞り込み">
+          <button class="filter-btn is-active" data-filter="all" role="tab" aria-selected="true">すべて</button>
+          <button class="filter-btn" data-filter="gp" role="tab" aria-selected="false">ガンダム開発計画</button>
+          <button class="filter-btn" data-filter="aeug" role="tab" aria-selected="false">Zプロジェクト</button>
+          <button class="filter-btn" data-filter="mass" role="tab" aria-selected="false">量産機</button>
+          <button class="filter-btn" data-filter="next" role="tab" aria-selected="false">次世代機</button>
+        </div>
+        <div class="product-grid">
+          <article class="product" data-cat="gp">
+            <p class="product-code">RX-78GP01</p>
+            <h3>ガンダム試作1号機<span>ゼフィランサス</span></h3>
+            <p>汎用性と機動性を追求した宇宙・地上両用試作機。コア・ファイター方式を採用。</p>
+            <span class="product-year">U.C. 0083</span>
+          </article>
+          <article class="product" data-cat="gp">
+            <p class="product-code">RX-78GP02A</p>
+            <h3>ガンダム試作2号機<span>サイサリス</span></h3>
+            <p>戦術核弾頭の運用を想定した重装甲試作機。※詳細は開示されておりません。</p>
+            <span class="product-year">U.C. 0083</span>
+          </article>
+          <article class="product" data-cat="gp">
+            <p class="product-code">RX-78GP03</p>
+            <h3>ガンダム試作3号機<span>デンドロビウム</span></h3>
+            <p>拠点防衛用の巨大アームドベース「オーキス」とMS「ステイメン」の複合兵器システム。</p>
+            <span class="product-year">U.C. 0083</span>
+          </article>
+          <article class="product" data-cat="aeug">
+            <p class="product-code">MSN-00100</p>
+            <h3>百式</h3>
+            <p>金色の耐ビームコーティングが特徴。「百年使える機体を」との願いを込めた高性能機。</p>
+            <span class="product-year">U.C. 0087</span>
+          </article>
+          <article class="product" data-cat="aeug">
+            <p class="product-code">MSZ-006</p>
+            <h3>Zガンダム</h3>
+            <p>Zプロジェクトの集大成。ウェイブライダーへの変形機構とバイオセンサーを搭載。</p>
+            <span class="product-year">U.C. 0087</span>
+          </article>
+          <article class="product" data-cat="aeug">
+            <p class="product-code">MSZ-010</p>
+            <h3>ZZガンダム</h3>
+            <p>高出力ジェネレーターとハイ・メガ・キャノンを備えた重火力型可変・合体MS。</p>
+            <span class="product-year">U.C. 0088</span>
+          </article>
+          <article class="product" data-cat="mass">
+            <p class="product-code">MSA-003</p>
+            <h3>ネモ</h3>
+            <p>ジムIIをベースに開発された量産型MS。高いコストパフォーマンスで多数が配備されました。</p>
+            <span class="product-year">U.C. 0087</span>
+          </article>
+          <article class="product" data-cat="mass">
+            <p class="product-code">RGM-89</p>
+            <h3>ジェガン</h3>
+            <p>地球連邦軍の次期主力量産機。優れた整備性と拡張性で長期にわたり運用されています。</p>
+            <span class="product-year">U.C. 0089</span>
+          </article>
+          <article class="product" data-cat="next">
+            <p class="product-code">RX-93</p>
+            <h3>νガンダム</h3>
+            <p>サイコフレームとフィン・ファンネルを搭載したニュータイプ専用機。短期間で完成させた傑作。</p>
+            <span class="product-year">U.C. 0093</span>
+          </article>
+          <article class="product" data-cat="next">
+            <p class="product-code">RX-0</p>
+            <h3>ユニコーンガンダム</h3>
+            <p>UC計画の最終段階として開発。機体全身をサイコフレームで構成した試作機。</p>
+            <span class="product-year">U.C. 0096</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- HISTORY -->
+    <section class="section section-alt" id="history">
+      <div class="container">
+        <header class="section-head">
+          <p class="section-en">HISTORY</p>
+          <h2 class="section-title">沿革</h2>
+        </header>
+        <ol class="timeline">
+          <li><span class="tl-year">U.C. 00XX</span><div class="tl-body"><h3>創業</h3><p>民生用電子機器メーカーとして創業。月面都市の発展とともに成長。</p></div></li>
+          <li><span class="tl-year">U.C. 0080</span><div class="tl-body"><h3>MS事業に本格参入</h3><p>一年戦争終結後、ジオニック社をはじめとする旧ジオン系企業を吸収合併。MS開発のノウハウを獲得。</p></div></li>
+          <li><span class="tl-year">U.C. 0081</span><div class="tl-body"><h3>ガンダム開発計画を受注</h3><p>地球連邦軍の次世代MS開発計画を受注し、試作1〜4号機の開発に着手。</p></div></li>
+          <li><span class="tl-year">U.C. 0087</span><div class="tl-body"><h3>Zプロジェクト始動</h3><p>ガンダリウムγ、ムーバブルフレームなど新技術を投入した可変MS群を開発。</p></div></li>
+          <li><span class="tl-year">U.C. 0093</span><div class="tl-body"><h3>サイコフレーム技術の実用化</h3><p>νガンダムを完成。サイコミュ技術の新たな時代を切り開く。</p></div></li>
+          <li><span class="tl-year">U.C. 0096</span><div class="tl-body"><h3>UC計画</h3><p>フル・サイコフレーム機 RX-0 ユニコーンガンダムを開発。</p></div></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- NEWS -->
+    <section class="section" id="news">
+      <div class="container">
+        <header class="section-head">
+          <p class="section-en">NEWS</p>
+          <h2 class="section-title">ニュースリリース</h2>
+        </header>
+        <ul class="news-list">
+          <li><time datetime="0096-04-07">U.C. 0096.04.07</time><span class="tag">MS</span><a href="#news">地球連邦軍向けジェガン改修型の追加納入について</a></li>
+          <li><time datetime="0096-03-15">U.C. 0096.03.15</time><span class="tag tag-blue">民生</span><a href="#news">コロニー向け新型空調システム「エアロ・リーフ」発売のお知らせ</a></li>
+          <li><time datetime="0096-02-28">U.C. 0096.02.28</time><span class="tag tag-green">IR</span><a href="#news">第3四半期決算短信を公開しました</a></li>
+          <li><time datetime="0096-01-10">U.C. 0096.01.10</time><span class="tag tag-blue">民生</span><a href="#news">フォン・ブラウン市本社ショールームのリニューアルオープンについて</a></li>
+          <li><time datetime="0095-12-01">U.C. 0095.12.01</time><span class="tag">MS</span><a href="#news">ビスト財団との技術協力に関する報道について（当社コメント）</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- RECRUIT -->
+    <section class="section recruit" id="recruit">
+      <div class="container recruit-inner">
+        <div>
+          <p class="section-en">RECRUIT</p>
+          <h2 class="section-title">未来を、設計しよう。</h2>
+          <p>
+            月面で、コロニーで、地球で。アナハイムでは、宇宙世紀の技術を担う仲間を募集しています。
+            MSエンジニア、ミノフスキー物理学研究者、テストパイロット、家電プロダクトデザイナーなど多数の職種で採用中です。
+          </p>
+        </div>
+        <ul class="job-list">
+          <li><span>MSフレーム設計エンジニア</span><small>フォン・ブラウン</small></li>
+          <li><span>サイコミュ・システム研究員</span><small>グラナダ</small></li>
+          <li><span>テストパイロット</span><small>各サイド</small></li>
+          <li><span>民生家電プロダクトデザイナー</span><small>フォン・ブラウン</small></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section" id="contact">
+      <div class="container narrow">
+        <header class="section-head">
+          <p class="section-en">CONTACT</p>
+          <h2 class="section-title">お問い合わせ</h2>
+          <p class="section-desc">製品・取引に関するお問い合わせは、以下のフォームよりお送りください。</p>
+        </header>
+        <form class="contact-form" novalidate>
+          <div class="form-row">
+            <label for="name">お名前 <span class="req">必須</span></label>
+            <input type="text" id="name" name="name" required autocomplete="name">
+          </div>
+          <div class="form-row">
+            <label for="org">ご所属</label>
+            <input type="text" id="org" name="org" placeholder="例：地球連邦軍 / エゥーゴ / 個人">
+          </div>
+          <div class="form-row">
+            <label for="email">メールアドレス <span class="req">必須</span></label>
+            <input type="email" id="email" name="email" required autocomplete="email">
+          </div>
+          <div class="form-row">
+            <label for="topic">お問い合わせ種別</label>
+            <select id="topic" name="topic">
+              <option>民生製品について</option>
+              <option>モビルスーツ・艦艇について</option>
+              <option>採用について</option>
+              <option>その他</option>
+            </select>
+          </div>
+          <div class="form-row">
+            <label for="message">お問い合わせ内容 <span class="req">必須</span></label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">送信する</button>
+          <p class="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <p class="footer-logo">ANAHEIM ELECTRONICS</p>
+        <p class="footer-addr">月面 フォン・ブラウン市</p>
+      </div>
+      <ul class="footer-nav">
+        <li><a href="#about">企業情報</a></li>
+        <li><a href="#business">事業紹介</a></li>
+        <li><a href="#products">製品</a></li>
+        <li><a href="#recruit">採用情報</a></li>
+        <li><a href="#contact">お問い合わせ</a></li>
+      </ul>
+    </div>
+    <div class="container">
+      <p class="disclaimer">
+        ※本サイトは「機動戦士ガンダム」シリーズに登場する架空の企業をモチーフにした非公式のファンメイドサイトです。
+        株式会社サンライズ（バンダイナムコフィルムワークス）および関連各社とは一切関係ありません。
+      </p>
+      <p class="copyright">&copy; U.C. 0096 Anaheim Electronics (Fan Made)</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
