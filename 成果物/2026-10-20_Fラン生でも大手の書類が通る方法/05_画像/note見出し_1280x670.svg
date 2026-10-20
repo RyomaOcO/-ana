@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="670" viewBox="0 0 1280 670">
+  <style>text{font-family:'IPAGothic','IPAPGothic','WenQuanYi Zen Hei',sans-serif;}</style>
+  <rect width="1280" height="670" fill="#FFFFFF"/>
+  <rect x="0" y="0" width="1280" height="14" fill="#1B2A4A"/>
+  <rect x="0" y="560" width="1280" height="110" fill="#1B2A4A"/>
+  <!-- 上の帯ラベル -->
+  <rect x="290" y="70" width="700" height="72" rx="36" fill="#F2B33D"/>
+  <text x="640" y="119" text-anchor="middle" font-size="38" font-weight="bold" fill="#1B2A4A">約100社出して約60社落ちた</text>
+  <!-- メイン -->
+  <text x="640" y="268" text-anchor="middle" font-size="92" font-weight="bold" fill="#1B2A4A">Fラン文系が</text>
+  <text x="640" y="400" text-anchor="middle" font-size="92" font-weight="bold" fill="#1B2A4A">書類に通り始めた<tspan fill="#D9861C">ES</tspan></text>
+  <rect x="330" y="432" width="620" height="10" rx="5" fill="#F2B33D"/>
+  <!-- 下帯 -->
+  <text x="640" y="630" text-anchor="middle" font-size="44" font-weight="bold" fill="#FFFFFF">通らないES・通るESを比較</text>
+</svg>
